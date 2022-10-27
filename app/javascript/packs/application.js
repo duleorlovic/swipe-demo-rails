@@ -7,7 +7,40 @@ import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
+import Swipe from 'swipejs'
 
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+
+window.addEventListener('load', (event) => {
+
+  window.mySwipe = new Swipe(document.getElementById('slider'), {
+    startSlide: 0,
+    speed: 400,
+    auto: 3000,
+    draggable: false,
+    continuous: true,
+    disableScroll: false,
+    stopPropagation: false,
+    ignore: ".scroller",
+    callback: function (index, elem, dir) { },
+    transitionEnd: function (index, elem) { }
+  });
+
+  const swiper = window.mySwipe
+
+  const nextDiv = document.getElementById('next')
+  const prevDiv = document.getElementById('prev')
+
+  nextDiv.addEventListener('click', function (e) {
+    console.log('click')
+    window.mySwipe.next()
+  })
+
+  prevDiv.addEventListener('click', function (e) {
+    window.mySwipe.prev()
+  })
+
+
+});
