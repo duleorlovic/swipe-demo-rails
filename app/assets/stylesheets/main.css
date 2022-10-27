@@ -1,0 +1,130 @@
+.container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.swipe {
+  overflow: hidden;
+  /* visibility: hidden; */
+  position: relative;
+}
+
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+.swipe-wrap>div {
+  float: left;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.swipe-element {
+  background-color: red;
+  height: 250px;
+  width: 500px;
+  left: 0px;
+  transition-duration: 0ms;
+
+  display: flex;
+  /* flex-direction: column;
+  justify-content: center;
+  align-items: center;  */
+}
+
+#prev {
+  height: 250px;
+  width: 250px;
+  background-color: green;
+}
+
+#next {
+  height: 250px;
+  width: 250px;
+  background-color: blue;
+}
+
+/* .flex-col {
+  display: flex;
+  flex-direction: column;
+} */
+
+.span-page {
+  position: absolute;
+  transform: translate(230%, 250%);
+
+}
+
+.span-time {
+  position: absolute;
+  transform: translateX(50%);
+}
+
+.demo-controls {
+  text-align: center;
+  padding: 1.5em;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  border-radius: 3px;
+  cursor: pointer;
+  text-decoration-line: none;
+}
+
+.btn-primary {
+  background-color: rgb(24, 130, 174);
+  color: rgb(221, 218, 214);
+}
+
+.r {
+  height: 250px;
+  width: 250px;
+  background-color: red;
+  display: inline-block;
+}
+
+.g {
+  height: 250px;
+  width: 250px;
+  background-color: green;
+  display: inline-block;
+}
+
+/* .b {
+  height: 250px;
+  width: 250px;
+  background-color: blue;
+  display: inline-block;
+} */
+
+.swipe2 {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+
+.swipe2-wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+.swipe2-wrap>div {
+  float: left;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.swipe2-element {
+  background-color: red;
+  height: 250px;
+  width: 500px;
+  left: 0px;
+  transition-duration: 0ms;
+
+
+}
