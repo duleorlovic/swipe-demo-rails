@@ -1,0 +1,30 @@
+<h1>Swiper</h1>
+
+<div class="container">
+  <div id="slider" class="swipe">
+    <div class="swipe-wrap">
+    <% @pages.each do |page| %>
+      <div class="swipe-element">
+        <div id="prev">
+          <span class="span-page">This is page <%= @page %></span>
+          <span class="span-time">Current time <%= Time.zone.now %></span>
+        </div>
+        <div id="next"></div>
+      </div>
+    <% end %>
+    </div>
+  </div>
+</div>
+
+<div class="demo-controls">
+  <%= link_to_if @page > 0, "&larr; Previous".html_safe, root_path(page: @page - 1), class: 'btn btn-primary' %>
+  <%= link_to "Next &rarr;".html_safe, root_path(page: @page + 1), class: 'btn btn-primary' %>
+</div>
+
+<%# <div id="slider2" class="swipe2">
+  <div class="swipe2-wrap">
+    <div class="swipe2-element">1</div>
+    <div class="swipe2-element">2</div>
+    <div class="swipe2-element">3</div>
+  </div>
+</div> %>
