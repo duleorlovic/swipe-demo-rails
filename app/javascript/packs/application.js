@@ -28,19 +28,16 @@ window.addEventListener('load', (event) => {
     transitionEnd: function (index, elem) { }
   });
 
-  const swiper = window.mySwipe
-
   const nextDiv = document.getElementById('next')
   const prevDiv = document.getElementById('prev')
 
   nextDiv.addEventListener('click', function (e) {
-    console.log('click')
+    console.log('next click')
     window.mySwipe.next()
   })
 
   prevDiv.addEventListener('click', function (e) {
+    console.log('prev click')
     window.mySwipe.prev()
   })
-
-
 });

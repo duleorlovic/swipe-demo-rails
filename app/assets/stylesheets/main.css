@@ -46,25 +46,26 @@
   background-color: blue;
 }
 
-/* .flex-col {
-  display: flex;
-  flex-direction: column;
-} */
-
 .span-page {
   position: absolute;
   transform: translate(230%, 250%);
-
+  color: red;
 }
 
 .span-time {
   position: absolute;
   transform: translateX(50%);
+  color: red;
 }
 
 .demo-controls {
   text-align: center;
   padding: 1.5em;
+}
+
+.link {
+  text-decoration-line: none;
+  cursor: pointer;
 }
 
 .btn {
@@ -79,27 +80,6 @@
   background-color: rgb(24, 130, 174);
   color: rgb(221, 218, 214);
 }
-
-.r {
-  height: 250px;
-  width: 250px;
-  background-color: red;
-  display: inline-block;
-}
-
-.g {
-  height: 250px;
-  width: 250px;
-  background-color: green;
-  display: inline-block;
-}
-
-/* .b {
-  height: 250px;
-  width: 250px;
-  background-color: blue;
-  display: inline-block;
-} */
 
 .swipe2 {
   overflow: hidden;
