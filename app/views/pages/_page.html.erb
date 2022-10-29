@@ -2,6 +2,10 @@
   page
 %>
 <div class="swipe-element">
-  <span class="span-page">Previous page <%= page %></span>
+  <span class="span-page">Page <%= page %></span>
   <span class="span-time">Current time <%= Time.zone.now %></span>
+
+  <%= form_with url: page_path(page: page + 1) do |f| %>
+    <%= f.submit "next page (#{page + 1})" %>
+<% end %>
 </div>

@@ -6,7 +6,7 @@
     <div id="next">Next</div>
   </div>
   <div id="slider" class="swipe">
-    <div class="swipe-wrap">
+    <div class="swipe-wrap" id="elements">
       <%= render partial: "page", locals: { page: @page - 1 } %>
       <%= render partial: "page", locals: { page: @page } %>
       <%= render partial: "page", locals: { page: @page + 1 } %>
