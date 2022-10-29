@@ -1,37 +1,15 @@
 <h1>Swiper</h1>
 
 <div class="container">
+  <div style="display:flex">
+    <div id="prev">Prev</div>
+    <div id="next">Next</div>
+  </div>
   <div id="slider" class="swipe">
     <div class="swipe-wrap">
-    <%# <% @pages.each do |page| %> 
-      <div class="swipe-element">
-        <% if @page == 0 %>
-         
-            <div id="prev">
-              <span class="span-page">This is page <%= @page %></span>
-              <span class="span-time">Current time <%= Time.zone.now %></span>
-            </div>
-     
-        <% else %>
-          <%= link_to root_path(page: @page - 1) do %>
-            <div id="prev">
-              <span class="span-page">This is page <%= @page %></span>
-              <span class="span-time">Current time <%= Time.zone.now %></span>
-            </div>
-          <% end %>
-        <% end %>
-     
-        <%= link_to root_path(page: @page + 1) do %>
-          <div id="next"></div>
-        <% end %>     
-      </div>
-      <%# <% @page = @page + 1 %> 
-    <%# <% end %> 
+      <%= render partial: "page", locals: { page: @page - 1 } %>
+      <%= render partial: "page", locals: { page: @page } %>
+      <%= render partial: "page", locals: { page: @page + 1 } %>
     </div>
   </div>
 </div>
-
-
-</div>
-
-

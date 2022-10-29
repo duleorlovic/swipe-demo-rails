@@ -49,13 +49,13 @@
 .span-page {
   position: absolute;
   transform: translate(230%, 250%);
-  color: red;
+  color: yellow;
 }
 
 .span-time {
   position: absolute;
   transform: translateX(50%);
-  color: red;
+  color: yellow;
 }
 
 .demo-controls {

@@ -16,16 +16,21 @@ ActiveStorage.start()
 window.addEventListener('load', (event) => {
 
   window.mySwipe = new Swipe(document.getElementById('slider'), {
-    startSlide: 0,
+    startSlide: 1,
     speed: 400,
-    auto: 3000,
-    draggable: false,
-    continuous: true,
+    // auto: 3000,
+    draggable: true,
+    continuous: false,
     disableScroll: false,
     stopPropagation: false,
     ignore: ".scroller",
-    callback: function (index, elem, dir) { },
-    transitionEnd: function (index, elem) { }
+    callback: function (index, elem, dir) {
+      console.log(`callback index=${index} elem=${elem} dir=${dir}`)
+      // load next K pages
+    },
+    transitionEnd: function (index, elem) {
+      console.log(`transitionEnd index=${index} elem=${elem}`)
+    }
   });
 
   const nextDiv = document.getElementById('next')
