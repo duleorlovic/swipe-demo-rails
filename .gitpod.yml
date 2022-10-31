@@ -4,3 +4,8 @@ image:
 tasks:
   - init: bin/setup
     command: bin/rails s
+
+ports:
+  # rails
+  - port: 3000
+    onOpen: open-preview
