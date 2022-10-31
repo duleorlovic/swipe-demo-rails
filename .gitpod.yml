@@ -1,0 +1,5 @@
+image: gitpod/workspace-ruby-3.1
+
+tasks:
+  - init: bin/setup
+    command: bin/rails s
