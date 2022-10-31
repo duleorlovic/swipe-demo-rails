@@ -1,5 +1,6 @@
 .container {
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   margin: 0 auto;
 }
 
@@ -24,7 +25,7 @@
 .swipe-element {
   background-color: red;
   height: 250px;
-  width: 500px;
+  width: 100%;
   left: 0px;
   transition-duration: 0ms;
 
@@ -102,7 +103,7 @@
 .swipe2-element {
   background-color: red;
   height: 250px;
-  width: 500px;
+  width: 100%;
   left: 0px;
   transition-duration: 0ms;
 
